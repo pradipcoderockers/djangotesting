@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Post(models.Model):
+    id = models.BigAutoField(primary_key=True)
     title = models.CharField(max_length=255)
     content = models.TextField()
     is_featured = models.BooleanField(default=False)
