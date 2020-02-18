@@ -1,7 +1,7 @@
-from ..common import Category
+from ..models import Category
 from rest_framework import serializers
 
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ('name') # if not declared, 
+        fields = '__all__' # if not declared, 
